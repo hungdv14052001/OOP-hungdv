@@ -1,0 +1,14 @@
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\obj\Debug\netcoreapp3.1\OOP-hung.dv.csproj.AssemblyReference.cache
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\obj\Debug\netcoreapp3.1\OOP-hung.dv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\obj\Debug\netcoreapp3.1\OOP-hung.dv.AssemblyInfoInputs.cache
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\obj\Debug\netcoreapp3.1\OOP-hung.dv.AssemblyInfo.cs
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\obj\Debug\netcoreapp3.1\OOP-hung.dv.csproj.CoreCompileInputs.cache
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\bin\Debug\netcoreapp3.1\OOP-hung.dv.exe
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\bin\Debug\netcoreapp3.1\OOP-hung.dv.deps.json
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\bin\Debug\netcoreapp3.1\OOP-hung.dv.runtimeconfig.json
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\bin\Debug\netcoreapp3.1\OOP-hung.dv.runtimeconfig.dev.json
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\bin\Debug\netcoreapp3.1\OOP-hung.dv.dll
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\bin\Debug\netcoreapp3.1\OOP-hung.dv.pdb
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\obj\Debug\netcoreapp3.1\OOP-hung.dv.dll
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\obj\Debug\netcoreapp3.1\OOP-hung.dv.pdb
+C:\Users\Dang Van Hung\source\repos\OOP-hung.dv\OOP-hung.dv\obj\Debug\netcoreapp3.1\OOP-hung.dv.genruntimeconfig.cache
