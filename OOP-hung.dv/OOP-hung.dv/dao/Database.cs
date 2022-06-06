@@ -11,17 +11,20 @@ namespace OOP_hung.dv.dao
         private List<Product> productTable;
         private List<Category> categoryTable;
         private List<Accessory> accessoryTable;
-        private Database instants;
-
-        public Database()
+        private static Database instants = new Database();
+        private Database()
         {
             productTable = new List<Product>();
             categoryTable = new List<Category>();
             accessoryTable = new List<Accessory>();
         }
 
+        public static Database getInstants()
+        {
+            return instants;
+        }
 
-        public int insertTable(string name, Object row)
+        public int insertTable(string name, BaseRow row)
         {
             int result = 0;
             if (name.Equals("productTable"))
@@ -36,7 +39,6 @@ namespace OOP_hung.dv.dao
                 {
 
                 }
-
             }
             else if (name.Equals("categoryTable"))
             {
@@ -68,9 +70,9 @@ namespace OOP_hung.dv.dao
             return result;
         }
 
-        public List<Object> selectTable(string name)
+        public List<BaseRow> selectTable(string name)
         {
-            List<Object> objectList = new List<object>();
+            List<BaseRow> objectList = new List<BaseRow>();
             if (name.Equals("productTable"))
             {
                 for (int i = 0; i < productTable.Count; i++)
@@ -94,7 +96,7 @@ namespace OOP_hung.dv.dao
             }
             return objectList;
         }
-        public int updateTable(string name, Object row)
+        public int updateTable(string name, BaseRow row)
         {
             int result = 0;
             if (name.Equals("productTable"))
@@ -140,7 +142,7 @@ namespace OOP_hung.dv.dao
             }
             return result;
         }
-        public int deleteTable(string name, Object row)
+        public int deleteTable(string name, BaseRow row)
         {
             int result = 0;
             if (name.Equals("productTable"))
@@ -196,7 +198,7 @@ namespace OOP_hung.dv.dao
                 accessoryTable.Clear();
             }
         }
-        public int updateTableById(int id, Object row)
+        public int updateTableById(int id, BaseRow row)
         {
             int result = 0;
             try

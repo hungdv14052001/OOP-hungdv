@@ -8,7 +8,7 @@ namespace OOP_hung.dv.demo
 {
     class DatabaseDemo
     {
-        private Database database = new Database();
+        private Database database = Database.getInstants();
         public void insertTableTest()
         {
             Product product = new Product(1, "CPU", 1, 100, 700, "product.jpg", "Mô tả sản phẩm");
@@ -26,6 +26,7 @@ namespace OOP_hung.dv.demo
             List<Product> listProduct = new List<Product>();
             foreach (Object ob in database.selectTable("productTable"))
             {
+                Console.WriteLine(new ProductDemo().printProduct(ob as Product));
                 listProduct.Add(ob as Product);
             }
 

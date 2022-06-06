@@ -39,7 +39,7 @@ namespace OOP_hung.dv.demo
                 Console.WriteLine("Id: " + category.Id + "\nName: " + category.Name);
             }
         }
-        public void findById()
+        public void findByIdTest()
         {
             int id = 1;
             Category category = categoryDAO.findById(id);

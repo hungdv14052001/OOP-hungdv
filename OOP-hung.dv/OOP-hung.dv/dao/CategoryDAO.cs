@@ -5,13 +5,13 @@ using System.Text;
 
 namespace OOP_hung.dv.dao
 {
-    class CategoryDAO
+    class CategoryDAO : BaseDAO
     {
         private Database database;
 
         public CategoryDAO()
         {
-            database = new Database();
+            database = Database.getInstants();
         }
         public bool insert(Category category) 
         {
@@ -39,12 +39,12 @@ namespace OOP_hung.dv.dao
         }
         public bool delete(Category category)
         {
-            if(category!= null)
+            try
             {
                 database.deleteTable("Category", category);
                 return true;
             }
-            else
+            catch (Exception exc)
             {
                 return false;
             }
@@ -52,7 +52,7 @@ namespace OOP_hung.dv.dao
         public List<Category> findAll()
         {
             List<Category> listCategory = new List<Category>();
-            List<Object> listObject = database.selectTable("Category");
+            List<BaseRow> listObject = database.selectTable("Category");
             for (int i=0;i< listObject.Count; i++)
             {
                 Category category = listObject[i] as Category;
@@ -63,7 +63,7 @@ namespace OOP_hung.dv.dao
         public Category findById(int id)
         {
             Category result = new Category();
-            List<Object> listObject = database.selectTable("Category");
+            List<BaseRow> listObject = database.selectTable("Category");
             for (int i = 0; i < listObject.Count; i++)
             {
                 Category category = listObject[i] as Category;

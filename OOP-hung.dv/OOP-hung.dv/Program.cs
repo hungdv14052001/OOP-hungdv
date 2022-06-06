@@ -19,9 +19,9 @@ namespace OOP_hung.dv
 
             //Test DatabaseDemo
 
-            //DatabaseDemo databaseDemo = new DatabaseDemo();
-            //databaseDemo.insertTableTest();
-            //databaseDemo.selectTableTest();
+            DatabaseDemo databaseDemo = new DatabaseDemo();
+            databaseDemo.insertTableTest();
+            databaseDemo.selectTableTest();
             //databaseDemo.updateTableTest();
             //databaseDemo.deleteTableTest();
             //databaseDemo.truncateTableTest();

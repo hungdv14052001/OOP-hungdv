@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OOP_hung.dv.entity
 {
-    class Category
+    class Category : BaseRow
     {
         private int id;
         private string name;
