@@ -4,9 +4,12 @@ using System.Text;
 
 namespace OOP_hung.dv.entity
 {
-    class iEntity
+    internal interface iEntity
     {
-        protected int Id { get; set; }
-        protected string Name { get; set; }
+        //Mô tả phương thức get, set Id
+        public int Id { get; set; }
+
+        //Mô tả phương thức get, set Name
+        public string Name { get; set; }
     }
 }

@@ -4,23 +4,17 @@ using System.Text;
 
 namespace OOP_hung.dv.entity
 {
-    class Accessory : BaseRow
+    class Accessory : BaseRow, iEntity
     {
-        private int id;
-        private string name;
 
+        //Phương thức khởi tạo Accessory không tham số
         public Accessory()
         {
-
         }
 
-        public Accessory(int id, string name)
+        //Phương thức khởi tạo Accessory có tham số
+        public Accessory(int id, string name) : base(id, name)
         {
-            this.id = id;
-            this.name = name;
         }
-
-        public int Id { get => id; set => id = value; }
-        public string Name { get => name; set => name = value; }
     }
 }

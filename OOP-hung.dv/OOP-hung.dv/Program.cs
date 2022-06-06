@@ -1,6 +1,8 @@
-﻿using OOP_hung.dv.demo;
+﻿using OOP_hung.dv.dao;
+using OOP_hung.dv.demo;
 using OOP_hung.dv.entity;
 using System;
+using System.Collections.Generic;
 
 namespace OOP_hung.dv
 {
@@ -22,11 +24,11 @@ namespace OOP_hung.dv
             DatabaseDemo databaseDemo = new DatabaseDemo();
             databaseDemo.insertTableTest();
             databaseDemo.selectTableTest();
-            //databaseDemo.updateTableTest();
-            //databaseDemo.deleteTableTest();
-            //databaseDemo.truncateTableTest();
-            //databaseDemo.initDatabase();
-            //databaseDemo.printTableTest("productTable");
+            databaseDemo.updateTableTest();
+            databaseDemo.deleteTableTest();
+            databaseDemo.truncateTableTest();
+            databaseDemo.initDatabase();
+            databaseDemo.printTableTest("productTable");
 
             //Test CategoryDAO
             //CategoryDaoDemo categoryDaoDemo = new CategoryDaoDemo();
@@ -34,6 +36,18 @@ namespace OOP_hung.dv
             //categoryDaoDemo.findAllTest();
             //categoryDaoDemo.updateTest();
             //categoryDaoDemo.deleteTest();
+            BaseDAO productDAO = new ProductDAO();
+            BaseRow row = new Product(1, "CPU", 1, 10, 700, "image.jpg", "Mo ta san pham");
+            BaseRow row2 = new Product(2, "CPU", 1, 10, 700, "image.jpg", "Mo ta san pham");
+            BaseRow row3 = new Product(3, "CP", 1, 10, 700, "image.jpg", "Mo ta san pham");
+            productDAO.insert(row);
+            productDAO.insert(row2);
+            productDAO.insert(row3);
+            List<BaseRow> listProduct = productDAO.findByName("CPU");
+            foreach(BaseRow r in listProduct)
+            {
+                Console.WriteLine(new ProductDemo().printProduct(r as Product));
+            }
         }
     }
 }

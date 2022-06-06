@@ -33,10 +33,10 @@ namespace OOP_hung.dv.demo
         }
         public void findAllTest()
         {
-            List<Product> listProduct = productDAO.findAll();
+            List<BaseRow> listProduct = productDAO.findAll();
             for (int i= 0; i < listProduct.Count;i++)
             {
-                Console.WriteLine(new ProductDemo().printProduct(listProduct[i]));
+                Console.WriteLine(new ProductDemo().printProduct(listProduct[i] as Product));
             }
         }
         public void findByIdTest()

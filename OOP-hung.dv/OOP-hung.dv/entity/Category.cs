@@ -4,23 +4,16 @@ using System.Text;
 
 namespace OOP_hung.dv.entity
 {
-    class Category : BaseRow
+    class Category : BaseRow, iEntity
     {
-        private int id;
-        private string name;
-
-        public Category()
+        //Phương thức khởi tạo Category không tham số
+        public Category() : base()
         {
-
         }
 
-        public Category(int id, string name)
+        //Phương thức khởi tạo Category có tham số
+        public Category(int id, string name): base(id, name)
         {
-            this.id = id;
-            this.name = name;
         }
-
-        public int Id { get => id; set => id = value; }
-        public string Name { get => name; set => name = value; }
     }
 }

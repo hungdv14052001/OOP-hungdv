@@ -33,7 +33,7 @@ namespace OOP_hung.dv.demo
         }
         public void findAllTest()
         {
-            List<Category> listCategory = categoryDAO.findAll();
+            List<BaseRow> listCategory = categoryDAO.findAll() ;
             foreach(Category category in listCategory)
             {
                 Console.WriteLine("Id: " + category.Id + "\nName: " + category.Name);
@@ -42,7 +42,7 @@ namespace OOP_hung.dv.demo
         public void findByIdTest()
         {
             int id = 1;
-            Category category = categoryDAO.findById(id);
+            Category category = categoryDAO.findById(id) as Category;
             Console.WriteLine("Id: " + category.Id + "\nName: " + category.Name);
         }
     }
